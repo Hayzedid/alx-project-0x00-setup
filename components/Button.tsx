@@ -1,11 +1,5 @@
 import React from "react";
-
-export interface ButtonProps {
-  title: string;
-  size?: "small" | "medium" | "large";
-  shape?: "rounded-sm" | "rounded-md" | "rounded-full";
-  className?: string;
-}
+import { ButtonProps } from "@/interfaces";
 
 const sizeClasses = {
   small: "px-2 py-1 text-sm",
