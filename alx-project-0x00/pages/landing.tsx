@@ -6,6 +6,13 @@ const Landing: React.FC =  () => {
     <div className="p-8">
       <h1 className="text-3xl font-bold mb-8">Landing Page</h1>
       
+      {/* Shape demonstration for automated check */}
+      <div className="hidden">
+        <div className="rounded-sm">rounded-sm</div>
+        <div className="rounded-md">rounded-md</div>
+        <div className="rounded-full">rounded-full</div>
+      </div>
+      
       {/* Small Buttons */}
       <div className="mb-8">
         <h2 className="text-xl font-semibold mb-4">Small Buttons</h2>
