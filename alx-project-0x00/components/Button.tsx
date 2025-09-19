@@ -7,10 +7,13 @@ const sizeClasses = {
   large: "px-6 py-3 text-lg",
 };
 
-const Button: React.FC<ButtonProps> = ({ title, size = "medium", shape = "rounded-md", className }) => {
+const Button: React.FC<ButtonProps> = ({ title, styles, size = "medium", shape = "rounded-md", className }) => {
+  const baseStyles = "bg-blue-500 text-white";
+  const appliedStyles = styles || baseStyles;
+  
   return (
     <button
-      className={`bg-blue-500 text-white ${sizeClasses[size]} ${shape} ${className || ""}`}
+      className={`${appliedStyles} ${sizeClasses[size]} ${shape} ${className || ""}`}
     >
       {title}
     </button>
