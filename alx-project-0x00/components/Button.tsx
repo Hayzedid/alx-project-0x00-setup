@@ -8,12 +8,9 @@ const sizeClasses = {
 };
 
 const Button: React.FC<ButtonProps> = ({ title, styles, size = "medium", shape = "rounded-md", className }) => {
-  const baseStyles = "bg-blue-500 text-white";
-  const appliedStyles = styles || baseStyles;
-  
   return (
     <button
-      className={`${appliedStyles} ${sizeClasses[size]} ${shape} ${className || ""}`}
+      className={`${styles} ${sizeClasses[size]} ${shape} ${className || ""}`}
     >
       {title}
     </button>
