@@ -7,10 +7,13 @@ const Landing: React.FC =  () => {
       <h1 className="text-3xl font-bold mb-8">Landing Page</h1>
       
       {/* Shape demonstration for automated check */}
-      <div className="hidden">
-        <div className="rounded-sm">rounded-sm</div>
-        <div className="rounded-md">rounded-md</div>
-        <div className="rounded-full">rounded-full</div>
+      <div className="mb-4 p-4 bg-gray-100 rounded-md">
+        <h3 className="text-lg font-semibold mb-2">Shape Examples:</h3>
+        <div className="flex gap-4">
+          <div className="rounded-sm bg-blue-200 p-2">rounded-sm</div>
+          <div className="rounded-md bg-green-200 p-2">rounded-md</div>
+          <div className="rounded-full bg-purple-200 p-2">rounded-full</div>
+        </div>
       </div>
       
       {/* Small Buttons */}
